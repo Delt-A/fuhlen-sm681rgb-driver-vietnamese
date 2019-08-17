@@ -1,0 +1,687 @@
+Remotesoft Mini Deployment Registry Version 1.00
+
+; The Environment key is a special key for you to add your own environment variables
+; please uncomment the following section if you want to add enviroment variables following the examples below
+; %rootdir% is a special macro for you to refer to the directory where rsdeploy.dll is stored
+
+;[EnvironmentVars]
+;"MyTemp"="F:\\temp"
+;"MyPath"="%rootdir%;c:\\program files\\remotesoft\\bin"
+
+; The ExternalChildProcesses key is useful when the mini-deployed application launches external processes.
+; By default, such processes are launched using the mini-deployed environment as well. 
+; However, in certain situations, you may not want this default behavior. 
+; By using this special key, you can specify the programs that will be launched without using the 
+; virtualized environment, in other words, these programs will be treated exactly same as if they are
+; launched directly from the windows operating system.
+; You can use semicolon to specify mutlitple executables (case-insensitve). The names will be partially macthed 
+; against the program name to be launched, so you don't need to specify the full name.
+;[ExternalChildProcesses]
+;@="1.exe;2.exe;3.exe;mydir\\4.exe"
+
+; registry keys for .NET 2.0.50727
+
+[HKEY_CLASSES_ROOT\CCWU.ComCallWrapper]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_CLASSES_ROOT\CCWU.ComCallWrapper\CLSID]
+@="{3F281000-E95A-11D2-886B-00C04F869F04}"
+
+[HKEY_CLASSES_ROOT\CCWU.ComCallWrapper\CurVer]
+@="CCWU.ComCallWrapper.1"
+
+[HKEY_CLASSES_ROOT\CCWU.ComCallWrapper.1]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_CLASSES_ROOT\CCWU.ComCallWrapper.1\CLSID]
+@="{3F281000-E95A-11D2-886B-00C04F869F04}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost\CurVer]
+@="CLRMetaData.CLRRuntimeHost.2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost.1]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost.1\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost.2]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CLRRuntimeHost.2\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenser]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenser\CLSID]
+@="{E5CB7A31-7512-11D2-89CE-0080C792E5D8}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenser\CurVer]
+@="CLRMetaData.CorMetaDataDispenser.2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenser.2]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenser.2\CLSID]
+@="{E5CB7A31-7512-11D2-89CE-0080C792E5D8}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenserRuntime]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenserRuntime\CLSID]
+@="{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenserRuntime\CurVer]
+@="CLRMetaData.CorMetaDataDispenserRuntime.2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenserRuntime.2]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorMetaDataDispenserRuntime.2\CLSID]
+@="{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorRuntimeHost]
+@="Microsoft Common Language Runtime Host"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorRuntimeHost\CLSID]
+@="{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorRuntimeHost\CurVer]
+@="CLRMetaData.CorRuntimeHost.2"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorRuntimeHost.2]
+@="Microsoft Common Language Runtime Host"
+
+[HKEY_CLASSES_ROOT\CLRMetaData.CorRuntimeHost.2\CLSID]
+@="{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSecurityHelper]
+@="WmiSecurityHelper Class"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSecurityHelper\CLSID]
+@="{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSecurityHelper\CurVer]
+@="WMINet_Utils.WmiSecurityHelper.1"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSecurityHelper.1]
+@="WmiSecurityHelper Class"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSecurityHelper.1\CLSID]
+@="{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}"
+
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSinkDemultiplexor]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSinkDemultiplexor\CLSID]
+@="{D2EAA715-DAC7-4771-AF5C-931611A1853C}"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSinkDemultiplexor\CurVer]
+@="WMINet_Utils.WmiSinkDemultiplexor.1"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSinkDemultiplexor.1]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_CLASSES_ROOT\WMINet_Utils.WmiSinkDemultiplexor.1\CLSID]
+@="{D2EAA715-DAC7-4771-AF5C-931611A1853C}"
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\ProgID]
+@="CLRMetaData.CorMetaDataDispenserRuntime.2"
+
+[HKEY_CLASSES_ROOT\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\VersionIndependentProgID]
+@="CLRMetaData.CorMetaDataDispenserRuntime"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\ProgID]
+@="CCWU.ComCallWrapper.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\VersionIndependentProgID]
+@="CCWU.ComCallWrapper"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}]
+@="Microsoft Common Language Runtime Meta Data V2"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\InprocServer32]
+"ThreadingModel"="Both"
+@="mscoree.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\ProgID]
+@="CLRMetaData.CLRRuntimeHost.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\VersionIndependentProgID]
+@="CLRMetaData.CLRRuntimeHost"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}]
+@="Microsoft Common Language Runtime Meta Data V2"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\InprocServer32]
+"ThreadingModel"="Both"
+@="mscoree.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\ProgID]
+@="CLRMetaData.CLRRuntimeHost.2"
+
+[HKEY_CLASSES_ROOT\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\VersionIndependentProgID]
+@="CLRMetaData.CLRRuntimeHost"
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\ProgID]
+@="CLRMetaData.CorRuntimeHost.2"
+
+[HKEY_CLASSES_ROOT\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\VersionIndependentProgID]
+@="CLRMetaData.CorRuntimeHost"
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}]
+@="Microsoft Common Language Runtime Meta Data"
+"MasterVersion"=dword:00000002
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\ProgID]
+@="CLRMetaData.CorMetaDataDispenser.2"
+
+[HKEY_CLASSES_ROOT\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\VersionIndependentProgID]
+@="CLRMetaData.CorMetaDataDispenser"
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}]
+@="WmiSecurityHelper Class"
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32\1.1.4322]
+@=""
+"ImplementedInThisVersion"=""
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\ProgID]
+@="WMINet_Utils.WmiSecurityHelper.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\Server]
+@="WMINet_Utils.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\VersionIndependentProgID]
+@="WMINet_Utils.WmiSecurityHelper"
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32\1.1.4322]
+@=""
+"ImplementedInThisVersion"=""
+
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\ProgID]
+@="WMINet_Utils.WmiSinkDemultiplexor.1"
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\Server]
+@="WMINet_Utils.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\VersionIndependentProgID]
+@="WMINet_Utils.WmiSinkDemultiplexor"
+
+; SOFTWARE branch, same as above in HKEY_CLASSES_ROOT
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CCWU.ComCallWrapper]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CCWU.ComCallWrapper\CLSID]
+@="{3F281000-E95A-11D2-886B-00C04F869F04}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CCWU.ComCallWrapper\CurVer]
+@="CCWU.ComCallWrapper.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CCWU.ComCallWrapper.1]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CCWU.ComCallWrapper.1\CLSID]
+@="{3F281000-E95A-11D2-886B-00C04F869F04}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost\CurVer]
+@="CLRMetaData.CLRRuntimeHost.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost.1]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost.1\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost.2]
+@="Microsoft Common Language Runtime Host V2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CLRRuntimeHost.2\CLSID]
+@="{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenser]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenser\CLSID]
+@="{E5CB7A31-7512-11D2-89CE-0080C792E5D8}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenser\CurVer]
+@="CLRMetaData.CorMetaDataDispenser.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenser.2]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenser.2\CLSID]
+@="{E5CB7A31-7512-11D2-89CE-0080C792E5D8}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenserRuntime]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenserRuntime\CLSID]
+@="{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenserRuntime\CurVer]
+@="CLRMetaData.CorMetaDataDispenserRuntime.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenserRuntime.2]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorMetaDataDispenserRuntime.2\CLSID]
+@="{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorRuntimeHost]
+@="Microsoft Common Language Runtime Host"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorRuntimeHost\CLSID]
+@="{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorRuntimeHost\CurVer]
+@="CLRMetaData.CorRuntimeHost.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorRuntimeHost.2]
+@="Microsoft Common Language Runtime Host"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLRMetaData.CorRuntimeHost.2\CLSID]
+@="{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSecurityHelper]
+@="WmiSecurityHelper Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSecurityHelper\CLSID]
+@="{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSecurityHelper\CurVer]
+@="WMINet_Utils.WmiSecurityHelper.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSecurityHelper.1]
+@="WmiSecurityHelper Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSecurityHelper.1\CLSID]
+@="{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSinkDemultiplexor]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSinkDemultiplexor\CLSID]
+@="{D2EAA715-DAC7-4771-AF5C-931611A1853C}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSinkDemultiplexor\CurVer]
+@="WMINet_Utils.WmiSinkDemultiplexor.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSinkDemultiplexor.1]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WMINet_Utils.WmiSinkDemultiplexor.1\CLSID]
+@="{D2EAA715-DAC7-4771-AF5C-931611A1853C}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\ProgID]
+@="CLRMetaData.CorMetaDataDispenserRuntime.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{1EC2DE53-75CC-11d2-9775-00A0C9B4D50C}\VersionIndependentProgID]
+@="CLRMetaData.CorMetaDataDispenserRuntime"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}]
+@="Com Call Wrapper Unmarshal Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\ProgID]
+@="CCWU.ComCallWrapper.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{3F281000-E95A-11d2-886B-00C04F869F04}\VersionIndependentProgID]
+@="CCWU.ComCallWrapper"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}]
+@="Microsoft Common Language Runtime Meta Data V2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\InprocServer32]
+"ThreadingModel"="Both"
+@="mscoree.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\ProgID]
+@="CLRMetaData.CLRRuntimeHost.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB01}\VersionIndependentProgID]
+@="CLRMetaData.CLRRuntimeHost"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}]
+@="Microsoft Common Language Runtime Meta Data V2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\InprocServer32]
+"ThreadingModel"="Both"
+@="mscoree.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\ProgID]
+@="CLRMetaData.CLRRuntimeHost.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{90F1A06E-7712-4762-86B5-7A5EBA6BDB02}\VersionIndependentProgID]
+@="CLRMetaData.CLRRuntimeHost"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}]
+@="Microsoft Common Language Runtime Meta Data"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\ProgID]
+@="CLRMetaData.CorRuntimeHost.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{CB2F6723-AB3A-11d2-9C40-00C04FA30A3E}\VersionIndependentProgID]
+@="CLRMetaData.CorRuntimeHost"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}]
+@="Microsoft Common Language Runtime Meta Data"
+"MasterVersion"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32\1.1.4322]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\NotInsertable]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\ProgID]
+@="CLRMetaData.CorMetaDataDispenser.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{E5CB7A31-7512-11D2-89CE-0080C792E5D8}\VersionIndependentProgID]
+@="CLRMetaData.CorMetaDataDispenser"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}]
+@="WmiSecurityHelper Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32\1.1.4322]
+@=""
+"ImplementedInThisVersion"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\ProgID]
+@="WMINet_Utils.WmiSecurityHelper.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\Server]
+@="WMINet_Utils.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{A8F03BE3-EDB7-4972-821F-AF6F8EA34884}\VersionIndependentProgID]
+@="WMINet_Utils.WmiSecurityHelper"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}]
+@="WmiSinkDemultiplexor Class"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32\1.1.4322]
+@=""
+"ImplementedInThisVersion"=""
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\InprocServer32\2.0.50727]
+"ImplementedInThisVersion"=""
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\ProgID]
+@="WMINet_Utils.WmiSinkDemultiplexor.1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\Server]
+@="WMINet_Utils.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{D2EAA715-DAC7-4771-AF5C-931611A1853C}\VersionIndependentProgID]
+@="WMINet_Utils.WmiSinkDemultiplexor"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework]
+"InstallRoot"="%rootdir%"
+
+[HKEY_CLASSES_ROOT\Installer\Assemblies\Global]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Assemblies\Global]
+@=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Installer\Assemblies\Global]
+@=""
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\standards]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\standards\Standard CLI 2002]
+"v1.1.4322"=dword:00001000
+"v2.0.50727"=dword:00000fff
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\standards\Standard CLI 2005]
+"v2.0.50727"=dword:00000fff
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\standards\v1.0.0]
+"v1.1.4322"=dword:000010e2
+"v2.0.50727"=dword:0000c627
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\Upgrades]
+"1.1.4322"="1.0.3705-1.1.4322"
+"2.0.50727"="1.0.0-2.0.50727"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\v1.1]
+"4322"="3706-4322"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\policy\v2.0]
+"50727"="50727-50727"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Fusion]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Fusion\GACChangeNotification]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Fusion\GACChangeNotification\Default]
+"CustomMarshalers,2.0.0.0,,b03f5f7f11d50a3a,x86"=hex:5b,9f,65,41,56,a2,d0,01\
+  
+"System.Data.OracleClient,2.0.0.0,,b77a5c561934e089,x86"=hex:be,8a,64,40,56,a2,\
+  d0,01
+"System.Data,2.0.0.0,,b77a5c561934e089,x86"=hex:08,08,1d,f6,bc,b5,d1,01
+"System.EnterpriseServices,2.0.0.0,,b03f5f7f11d50a3a,x86"=hex:fb,bc,4c,40,56,\
+  a2,d0,01
+"System.Transactions,2.0.0.0,,b77a5c561934e089,x86"=hex:31,65,a5,1c,54,a2,d0,\
+  01
+"System.Web,2.0.0.0,,b03f5f7f11d50a3a,x86"=hex:75,dc,fc,06,64,42,d0,01
+"mscorlib,2.0.0.0,,b77a5c561934e089,x86"=hex:97,3c,d5,65,6c,a2,d0,01
+"Accessibility,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:a6,94,d6,42,56,a2,d0,01
+"Microsoft.JScript,8.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:a1,7e,b0,42,56,a2,d0,01\
+  
+"Microsoft.VisualC,8.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:1c,e0,e9,a3,11,ea,c9,01\
+  
+"Microsoft.Vsa,8.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:11,ac,21,42,56,a2,d0,01
+"System.Configuration.Install,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:ec,71,f4,41,\
+  56,a2,d0,01
+"System.Configuration,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:2b,af,ef,41,56,a2,d0,\
+  01
+"System.Data.SqlXml,2.0.0.0,,b77a5c561934e089,MSIL"=hex:dd,31,03,2a,9d,2e,d1,\
+  01
+"System.Deployment,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:67,54,ce,42,4a,fc,d0,01\
+  
+"System.Design,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:ca,02,e1,d5,e4,47,d0,01
+"System.DirectoryServices.Protocols,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:a8,0f,\
+  36,ca,da,bb,d0,01
+"System.DirectoryServices,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:c7,37,c7,41,56,\
+  a2,d0,01
+"System.Drawing.Design,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:a6,13,c0,41,56,a2,\
+  d0,01
+"System.Drawing,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:9a,80,0b,72,8b,3d,d1,01
+"System.Management,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:25,8e,b6,41,56,a2,d0,01\
+  
+"System.Runtime.Remoting,2.0.0.0,,b77a5c561934e089,MSIL"=hex:29,59,cc,93,e1,c7,\
+  cf,01
+"System.Runtime.Serialization.Formatters.Soap,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:a3,\
+  08,ad,41,56,a2,d0,01
+"System.Security,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:e7,cf,71,3b,8c,5e,d1,01\
+  
+"System.ServiceProcess,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:20,78,90,41,56,a2,\
+  d0,01
+"System.Web.RegularExpressions,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:96,ce,1b,07,\
+  64,42,d0,01
+"System.Web.Services,2.0.0.0,,b03f5f7f11d50a3a,MSIL"=hex:f1,27,aa,1c,54,a2,d0,\
+  01
+"System.Windows.Forms,2.0.0.0,,b77a5c561934e089,MSIL"=hex:88,b7,04,d6,e4,47,d0,\
+  01
+"System.Xml,2.0.0.0,,b77a5c561934e089,MSIL"=hex:61,b7,0c,2a,9d,2e,d1,01
+"System,2.0.0.0,,b77a5c561934e089,MSIL"=hex:20,30,74,bb,0c,6f,d1,01
+"CyUSB,3.4.6.0,,01f1d2b6c851ae92,MSIL"=hex:00,71,dc,24,cd,0c,d0,01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Fusion\NativeImagesIndex]

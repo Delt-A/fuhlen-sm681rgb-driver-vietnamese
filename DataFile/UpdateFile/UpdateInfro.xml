@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoUpdater>
+  <HttpURLAddress URL="http://113.106.124.131:9991/">
+  </HttpURLAddress>
+  <DriverLocalInfro DriverName="SM681Driver" DriverVersion="1.2.0" IsHit="1">
+  </DriverLocalInfro>
+  <ArrayOfDriverEntity>
+  </ArrayOfDriverEntity>
+</AutoUpdater>
